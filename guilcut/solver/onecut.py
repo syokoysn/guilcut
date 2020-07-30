@@ -17,15 +17,19 @@ class One_cut :
         各 item の面積
     '''
     def __init__(self, I, W_max, H_max, w, h, area, df_item_data, mode = 'no'):
+
         self.I = I
-        self.W_max = W_max; self.H_max = H_max
+        self.W_max = W_max
+        self.H_max = H_max
         self.W_min = 100
         self.df_item_data = df_item_data
         self.w = w; self.h = h
         self.area = area
         self.opt_time = None
+
         # 段数 K を作成。
-        ''' I の中で一番小さいitemを基準に作成'''
+        # #I の中で一番小さいitemを基準に作成
+
         s_item = sorted(w.values())
         s = 0;k = 0
         for i in sorted(w.values()) :
