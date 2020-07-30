@@ -1,3 +1,7 @@
+#import gurobipy as gb
+#import gurobi as gb
+import mypulp as gb
+import time
 class One_cut :
     '''一つの問題例に対して、求解する calss 
     前提として,各 item に対して h > wが成り立つ
