@@ -23,7 +23,8 @@ class One_cut :
         self.H_max = H_max
         self.W_min = 100
         self.df_item_data = df_item_data
-        self.w = w; self.h = h
+        self.w = w
+        self.h = h
         self.area = area
         self.opt_time = None
 
@@ -44,6 +45,8 @@ class One_cut :
         else :
             self.K = k
         print('K',self.K) 
+
+        # modeの選択
         self.mode = mode
         if mode == 'r':
             # 妥当不等式のためのlist作成
