@@ -6,6 +6,8 @@
         "terminal.integrated.shell.linux": "/bin/bash",
         "python.pythonPath": "/usr/local/bin/python",
         "autoDocstring.docstringFormat": "numpy",
+        "python.linting.pylintEnabled": false,
+        "python.linting.flake8Enabled": true,
     },
     "extensions": [
         "ms-python.python", 
@@ -14,5 +16,6 @@
         "kevinrose.vsc-python-indent",
         "pkief.material-icon-theme",
         "formulahendry.code-runner",
+        "ms-ceintl.vscode-language-pack-ja"
     ]
 }
